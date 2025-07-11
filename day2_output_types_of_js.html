@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <h1 id="result">This is the original content</h1>
+  <button onclick="changes()">check</button>
+
+  <script>
+    let Hi = document.getElementById("result")
+    function changes() {
+        Hi.innerHTML = "This is the change content  <mark> Hello Everyone </mark>";
+    }
+  </script>
+
+
+
+  <button onclick="alert('Hello World! Inline Javascript')">This is shows the inline js </button>
+
+
+    <script>
+        console.log("Hello everyone!");
+        console.log(12 + 23);
+        console.log(false);
+
+        //popup display in alert
+        console.log("This is the display alert");
+
+        document.write("Hello everyone! This is displayed in document.write");
+
+        document.write("<h1>Hello everyone!</h1>");
+        alert("This is stoping the flow of code");
+    </script>
+    
+</body>
+</html>
